@@ -1,0 +1,187 @@
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "ybREjlmsOPSYugn3I1POO__2fbo",
+  "nextPageToken": "CAUQAA",
+  "pageInfo": {
+    "totalResults": 158,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Brul4W-KxbuHiCzI-zln1FfdMoA",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "o_XVt5rdpFY"
+      },
+      "snippet": {
+        "publishedAt": "2019-01-04T16:20:17Z",
+        "channelId": "UCAuUUnT6oDeKwE6v1NGQxug",
+        "title": "The secrets of learning a new language | Lýdia Machová",
+        "description": "Visit http://TED.com to get our entire library of TED Talks, transcripts, translations, personalized talk recommendations and more.\n\nWant to learn a new language but feel daunted or unsure where to begin? You don't need some special talent or a \"language gene,\" says Lýdia Machová. In an upbeat, inspiring talk, she reveals the secrets of polyglots (people who speak multiple languages) and shares four principles to help unlock your own hidden language talent -- and have fun while doing it.\n\nThe TED Talks channel features the best talks and performances from the TED Conference, where the world's leading thinkers and doers give the talk of their lives in 18 minutes (or less). Look for talks on Technology, Entertainment and Design -- plus science, business, global issues, the arts and more. You're welcome to link to or embed these videos, forward them to others and share these ideas with people you know. \n\nBecome a TED Member: http://ted.com/membership\nFollow TED on Twitter: http://twitter.com/TEDTalks\nLike TED on Facebook: http://facebook.com/TED\nSubscribe to our channel: http://youtube.com/TED\n\nTED's videos may be used for non-commercial purposes under a Creative Commons License, Attribution–Non Commercial–No Derivatives (or the CC BY – NC – ND 4.0 International) and in accordance with our TED Talks Usage Policy (https://www.ted.com/about/our-organization/our-policies-terms/ted-talks-usage-policy). For more information on using TED for commercial purposes (e.g. employee learning, in a film or online course), please submit a Media Request at https://media-requests.ted.com",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/o_XVt5rdpFY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/o_XVt5rdpFY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/o_XVt5rdpFY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/o_XVt5rdpFY/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/o_XVt5rdpFY/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "TED",
+        "liveBroadcastContent": "none",
+        "publishTime": "2019-01-04T16:20:17Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "sW_FVbey1Fa0C8FzAvwBHbU6u9Q",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "6qfbpBzqitA"
+      },
+      "snippet": {
+        "publishedAt": "2023-01-05T10:22:54Z",
+        "channelId": "UC8IeZjh8w-Q9ubcmOcgWB1w",
+        "title": "Brené Brown Leaves the Audience SPEECHLESS | One of the Best Motivational Speeches Ever",
+        "description": "Casandra Brené Brown is an American professor, lecturer, author, and podcast host. Brown is known in particular for her research on shame, vulnerability, and leadership, and for her widely viewed TEDx talk in 2010. Brené has saved the lives of many through her work.\n\nSubscribe for Motivational Videos Every Week! http://bit.do/eQnpo\n\nGet Your Merchandise Now: \nhttps://teespring.com/stores/motivationalinstinct\n\nFollow us on:\nInstagram: https://www.instagram.com/motivationalinstinct/\nContact: liveyourlifewithoutlimits97@gmail.com\n\nDisclaimer:\nThis video was fully edited and licensed by Motivational Instinct Studio\n\nSpeacial thanks to Marie Forleo\nWebsite: https://www.marieforleo.com/\nFacebook: http://www.Facebook.com/marieforleo\nTwitter: http://www.twitter.com/marieforleo\nInstagram: http://www.instagram.com/marieforleo\nYouTube: http://www.youtube.com/marieforleo\n\nSpeaker: Brené Brown\nWebsite: https://brenebrown.com/\nFacebook: https://www.facebook.com/brenebrown/\nInstagram: https://www.instagram.com/brenebrown/\nTwitter: https://twitter.com/BreneBrown\n\nMusic: Licensed from Ibi\nYoutube: https://www.youtube.com/ibiberlin\nAmazon Music: https://music.amazon.com/artists/B01AH2NAZM/ibi\nSpotify: http://bit.ly/spotify_ibi\nItunes/apple: https://apple.co/3uvATsE\nMore links: https://www.ibipiano.com/links\n\nAll footage used in our videos are licensed through StoryBlocks, FilmPac and Artgrid. We own commercial licenses for all the content used in our videos.\n\n•FAIR USE DISCLAIMER•\n\n1)This video has no negative impact on the original works\n2)This video is also for teaching purposes\n3)It is transformative in nature\n4)I only used bits and pieces of the videos  to get point across where necessary\n\nKeywords: motivation, inspiration, success, inspirational video, successful life, grind, work hard, discipline, never give up, morning daily motivation, motivational video.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/6qfbpBzqitA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/6qfbpBzqitA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/6qfbpBzqitA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/6qfbpBzqitA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/6qfbpBzqitA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Motivational Instinct",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-01-05T10:22:54Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "-XzEGV5Th1BKTT1p18AoMko7V18",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "VRJzvJ5XPQI"
+      },
+      "snippet": {
+        "publishedAt": "2021-10-15T19:29:36Z",
+        "channelId": "UCftwRNsjfRo08xYE31tkiyw",
+        "title": "Body Language Expert Explains How to Show Confidence | WIRED",
+        "description": "Former FBI agent and body language expert Joe Navarro explains how we can project confidence through our body language. Joe takes a look at various celebrities and politicians and demonstrates the things that they do that can help them appear more confident. \r\n\r\nCheck out Joe's book \"Be Exceptional\"\r\nhttps://www.amazon.com/Be-Exceptional-Master-Traits-Extraordinary-ebook/dp/B08K93BLQP/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=\r\n\r\nhttps://www.jnforensics.com/ \r\n\r\nBooks By Joe Navarro: https://www.jnforensics.com/books\r\nJoe Navarro Body Language Academy: https://jnbodylanguageacademy.com\n\nStill haven’t subscribed to WIRED on YouTube? ►► http://wrd.cm/15fP7B7 \r\nListen to the Get WIRED podcast  ►► https://link.chtbl.com/wired-ytc-desc\r\nWant more WIRED? Get the magazine ►► https://subscribe.wired.com/subscribe/splits/wired/WIR_YouTube?source=EDT_WIR_YouTube_0_Video_Description_ZZ\r\n\r\nFollow WIRED:\r\n\r\nInstagram ►►https://instagram.com/wired\r\nTwitter ►►http://www.twitter.com/wired\r\nFacebook ►►https://www.facebook.com/wired\r\n\r\nGet more incredible stories on science and tech with our daily newsletter: https://wrd.cm/DailyYT\r\n\r\nAlso, check out the free WIRED channel on Roku, Apple TV, Amazon Fire TV, and Android TV. \r\n\r\nABOUT WIRED\r\nWIRED is where tomorrow is realized. Through thought-provoking stories and videos, WIRED explores the future of business, innovation, and culture.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/VRJzvJ5XPQI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/VRJzvJ5XPQI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/VRJzvJ5XPQI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/VRJzvJ5XPQI/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/VRJzvJ5XPQI/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "WIRED",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-10-15T19:29:36Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Acw623Q1qvf-_X27H2YbyQcUfig",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "czotJvJxWHU"
+      },
+      "snippet": {
+        "publishedAt": "2023-01-13T20:20:33Z",
+        "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+        "title": "Ben Bir Malım | I am an Idiot | Behçet Yalın Özkara | TEDxIzmit",
+        "description": "Gerçekler mutlu etmez. Ancak mutsuzluğun ve hayatın gerçeklerinin harekete geçirici etkisi vardır. Behçet Yalın Özkara eğitimin mutluluk getireceğine inandı. Bu nedenle ESOGÜ İşletmeden lisans ve doktora, Hacettepe’den Yüksek Lisans, Anadolu İktisattan lisans, Dış ticaret ve Halkla ilişkilerden ise önlisans diplomalarını aldı. Ancak elde ettiği mutluluk çok kısa sürdü. Bu sefer, Yurtdışında eğitim görerek mutluluğu yakalayacağına inandı. Seul Hanyang, Massachusetts ve Michigan üniversitelerinde bulundu. Yine olmadı. Ardından şöhret belki beni mutlu eder diye umdu. Akademiklink isimli bir youtube kanalı açtı. Behçet Yalın Özkara believed that education would lead him to happiness. For this reason, he pursued education and received several degrees; bachelor's degree and Phd. in Business at ESOGU, master at Hacettepe, bachelor's degree in Economics and associate degree in Foreign Trade and Public Relations at Anadolu University. However, the happiness he achieved didn't last long. This time, he thought he would find happiness by studying abroad. Then he's been at Hanyang University of Seoul, University of Massachusettes and University of Michigan. Happiness didn't happen again. Then he thought fame might bring him happiness. So he started a Youtube Channel named \"Akademiklink\". He is still unhappy but has full faith that someday he will be happy. This talk was given at a TEDx event using the TED conference format but independently organized by a local community. Learn more at https://www.ted.com/tedx",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/czotJvJxWHU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/czotJvJxWHU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/czotJvJxWHU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/czotJvJxWHU/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/czotJvJxWHU/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "TEDx Talks",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-01-13T20:20:33Z"
+      }
+    }
+  ]
+}

@@ -16,7 +16,9 @@
 
 <p align="center">
   Youtube Service using React, React Hook, React Router, React Query(TanStack Query)
-  Advanced Service to use new libraries
+</p>
+<p align="center">
+Advanced Service to use new libraries
 </p>
 
 <br/>

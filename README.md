@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/Youtube-FF0000" />
   <img src="https://img.shields.io/badge/HTML-E34F26" />
   <img src="https://img.shields.io/badge/CSS-1572B6" />
-  <img src="https://img.shields.io/badge/Tailwind-#00b7d6" />
+  <img src="https://img.shields.io/badge/Tailwind-00b7d6" />
   <img src="https://img.shields.io/badge/Javascript-F7DF1E" />
   <img src="https://img.shields.io/badge/React-61DAFB" />
   <img src="https://img.shields.io/badge/Npm-CB3837" />

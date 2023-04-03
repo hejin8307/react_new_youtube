@@ -58,5 +58,5 @@ Advanced Service to use new libraries
 - Show videos
 - Play the video you click
 - Show description of video
-- pagination
+- URL
 - Login / Logout / Signup

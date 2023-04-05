@@ -8,14 +8,6 @@ import axios from 'axios';
 import NotFound from './pages/NotFound';
 import Videos from './pages/Videos';
 import VideoDetail from './pages/VideoDetail';
-import Youtube from './service/youtube';
-
-const httpClient = axios.create({
-  baseURL: 'https://youtube.googleapis.com/youtube/v3',
-  params: {key: process.env.REACT_APP_YOUTUBE_API_KEY},
-});
-
-const youtube = new Youtube(httpClient);
 
 const router = createBrowserRouter([
   {
@@ -23,7 +15,7 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <NotFound />,
     children: [
-      {index: true, element: <Videos youtube={youtube} />},
+      {index: true, element: <Videos />},
       {path: 'videos', element: <Videos />},
       {path: 'videos/:keyword', element: <Videos />},
       {path: 'videos/watch/:videoId', element: <VideoDetail />},

@@ -1,34 +1,24 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {useParams} from 'react-router-dom';
 import {useQuery} from '@tanstack/react-query';
-import axios from 'axios';
 import VideoCard from '../components/VideoCard';
+import {useYoutubeApi} from '../context/YoutubeApiContext';
 
 // SearhBar에서 비디오를 검색했을 때 page
-const Videos = ({youtube}) => {
+const Videos = () => {
   const {keyword} = useParams();
+  const {youtube} = useYoutubeApi();
   const {
     isLoading,
     error,
     data: videos,
-  } = useQuery(['videos', keyword], async () => {
-    return axios
-      .get(`/data/${keyword ? 'search' : 'popular'}.json`)
-      .then((res) => res.data.items);
-  });
-  // const [videos, setVideos] = useState([]);
-
-  // useEffect(() => {
-  //   youtube.popular().then((videos) => {
-  //     setVideos(videos);
-  //   });
-  // }, [youtube]);
+  } = useQuery(['videos', keyword], () => youtube.search(keyword));
 
   return (
     <>
-      {keyword ? `🔍${keyword}` : '🔥'}
+      <div>Videos {keyword ? `🔍${keyword}` : '🔥'}</div>
       {isLoading && <p>Loading...</p>}
-      {error && <p>Something is wrong ❌</p>}
+      {error && <p>Something is wrong 😖</p>}
       {videos && (
         <ul>
           {videos.map((video) => (

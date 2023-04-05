@@ -1,11 +1,16 @@
 import {Outlet} from 'react-router-dom';
-import Searchbar from './components/Searchbar/Searchbar';
+import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
+import Searchbar from './components/Searchbar';
+
+const queryClient = new QueryClient();
 
 function App() {
   return (
     <>
       <Searchbar />
-      <Outlet />
+      <QueryClientProvider client={queryClient}>
+        <Outlet />
+      </QueryClientProvider>
     </>
   );
 }

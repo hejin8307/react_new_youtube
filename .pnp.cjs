@@ -40,6 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-router-dom", "virtual:9340381590bc6cf3e71319d5da484aff79470829b67ea69369b691cfc8e181a67e7cee12198c5cb0339767d90f057c1c5a2a46ce3f85f81afc0ff8dc33aaf9cd#npm:6.10.0"],\
             ["react-scripts", "virtual:9340381590bc6cf3e71319d5da484aff79470829b67ea69369b691cfc8e181a67e7cee12198c5cb0339767d90f057c1c5a2a46ce3f85f81afc0ff8dc33aaf9cd#npm:5.0.1"],\
             ["tailwindcss", "virtual:9340381590bc6cf3e71319d5da484aff79470829b67ea69369b691cfc8e181a67e7cee12198c5cb0339767d90f057c1c5a2a46ce3f85f81afc0ff8dc33aaf9cd#npm:3.3.1"],\
+            ["timeago.js", "npm:4.0.2"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
           "linkType": "SOFT"\
@@ -12049,6 +12050,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-router-dom", "virtual:9340381590bc6cf3e71319d5da484aff79470829b67ea69369b691cfc8e181a67e7cee12198c5cb0339767d90f057c1c5a2a46ce3f85f81afc0ff8dc33aaf9cd#npm:6.10.0"],\
             ["react-scripts", "virtual:9340381590bc6cf3e71319d5da484aff79470829b67ea69369b691cfc8e181a67e7cee12198c5cb0339767d90f057c1c5a2a46ce3f85f81afc0ff8dc33aaf9cd#npm:5.0.1"],\
             ["tailwindcss", "virtual:9340381590bc6cf3e71319d5da484aff79470829b67ea69369b691cfc8e181a67e7cee12198c5cb0339767d90f057c1c5a2a46ce3f85f81afc0ff8dc33aaf9cd#npm:3.3.1"],\
+            ["timeago.js", "npm:4.0.2"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
           "linkType": "SOFT"\
@@ -16457,6 +16459,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/thunky-npm-1.1.0-2d25531f44-993096c472.zip/node_modules/thunky/",\
           "packageDependencies": [\
             ["thunky", "npm:1.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["timeago.js", [\
+        ["npm:4.0.2", {\
+          "packageLocation": "./.yarn/cache/timeago.js-npm-4.0.2-e87d64f9a3-c785a06988.zip/node_modules/timeago.js/",\
+          "packageDependencies": [\
+            ["timeago.js", "npm:4.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\

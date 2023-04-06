@@ -32,6 +32,23 @@ class Youtube {
       })
       .then((res) => res.data.items);
   }
+
+  async channel(videos) {
+    const videoChannel = [];
+    for (let i = 0; i < videos.length; i++) {
+      const response = this.apiClient
+        .channels({
+          params: {
+            part: 'snippet',
+            id: videos[i].snippet.channelId,
+          },
+        })
+        .then((res) => res.data.items[0])
+        .then((item) => (videos[i].channel = item));
+      videoChannel.push(response);
+    }
+    return videoChannel;
+  }
 }
 
 export default Youtube;

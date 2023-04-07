@@ -35,28 +35,23 @@ Advanced Service to use new libraries
 
 ## 🛠 Function with Screenshots(soon)
 
-- Searchbar
-- Video list
-- Video Detail
-- Channel Info
+- Search a video
+- Show videos
+- Play the video you clicked
+- Show videos' info
 
 ## ✔ Done
 
-- Show entire items
-- Add an item
-- Delete an item
-- Checkbox for items
-- Filtering for items
-- DarkMode
-- Save data
+- Search a video
+- Show videos
+- play the video you clicked
+- show videos' info
 
 ## 💻 URL
 
 ## 📖 Todo
 
-- Search a video
-- Show videos
-- Play the video you click
-- Show description of video
-- URL
+- Show channel Info
 - Login / Logout / Signup
+- DarkMode
+- Fix UX/UI

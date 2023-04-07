@@ -34,6 +34,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/user-event", "virtual:9340381590bc6cf3e71319d5da484aff79470829b67ea69369b691cfc8e181a67e7cee12198c5cb0339767d90f057c1c5a2a46ce3f85f81afc0ff8dc33aaf9cd#npm:13.5.0"],\
             ["axios", "npm:1.3.4"],\
             ["eslint-config-react-app", "virtual:9340381590bc6cf3e71319d5da484aff79470829b67ea69369b691cfc8e181a67e7cee12198c5cb0339767d90f057c1c5a2a46ce3f85f81afc0ff8dc33aaf9cd#npm:7.0.1"],\
+            ["he", "npm:1.2.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:9340381590bc6cf3e71319d5da484aff79470829b67ea69369b691cfc8e181a67e7cee12198c5cb0339767d90f057c1c5a2a46ce3f85f81afc0ff8dc33aaf9cd#npm:18.2.0"],\
             ["react-icons", "virtual:9340381590bc6cf3e71319d5da484aff79470829b67ea69369b691cfc8e181a67e7cee12198c5cb0339767d90f057c1c5a2a46ce3f85f81afc0ff8dc33aaf9cd#npm:4.8.0"],\
@@ -12044,6 +12045,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/user-event", "virtual:9340381590bc6cf3e71319d5da484aff79470829b67ea69369b691cfc8e181a67e7cee12198c5cb0339767d90f057c1c5a2a46ce3f85f81afc0ff8dc33aaf9cd#npm:13.5.0"],\
             ["axios", "npm:1.3.4"],\
             ["eslint-config-react-app", "virtual:9340381590bc6cf3e71319d5da484aff79470829b67ea69369b691cfc8e181a67e7cee12198c5cb0339767d90f057c1c5a2a46ce3f85f81afc0ff8dc33aaf9cd#npm:7.0.1"],\
+            ["he", "npm:1.2.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:9340381590bc6cf3e71319d5da484aff79470829b67ea69369b691cfc8e181a67e7cee12198c5cb0339767d90f057c1c5a2a46ce3f85f81afc0ff8dc33aaf9cd#npm:18.2.0"],\
             ["react-icons", "virtual:9340381590bc6cf3e71319d5da484aff79470829b67ea69369b691cfc8e181a67e7cee12198c5cb0339767d90f057c1c5a2a46ce3f85f81afc0ff8dc33aaf9cd#npm:4.8.0"],\

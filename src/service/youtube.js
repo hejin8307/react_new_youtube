@@ -7,6 +7,32 @@ class Youtube {
     return keyword ? this.#searchByKeyword(keyword) : this.#mostPopular();
   }
 
+  async channelDetail(id) {
+    return this.apiClient
+      .channels({
+        params: {
+          part: 'snippet',
+          id,
+        },
+      })
+      .then((res) => res.data.items[0]);
+  }
+
+  async relatedVideos(id) {
+    return this.apiClient
+      .search({
+        params: {
+          part: 'snippet',
+          maxResults: 25,
+          type: 'video',
+          relatedToVideoId: id,
+        },
+      })
+      .then((res) =>
+        res.data.items.map((item) => ({...item, id: item.id.videoId}))
+      );
+  }
+
   async #searchByKeyword(keyword) {
     return this.apiClient
       .search({
@@ -17,8 +43,9 @@ class Youtube {
           q: keyword,
         },
       })
-      .then((res) => res.data.items)
-      .then((items) => items.map((item) => ({...item, id: item.id.videoId})));
+      .then((res) =>
+        res.data.items.map((item) => ({...item, id: item.id.videoId}))
+      );
   }
 
   async #mostPopular() {
@@ -31,23 +58,6 @@ class Youtube {
         },
       })
       .then((res) => res.data.items);
-  }
-
-  async channel(videos) {
-    const videoChannel = [];
-    for (let i = 0; i < videos.length; i++) {
-      const response = this.apiClient
-        .channels({
-          params: {
-            part: 'snippet',
-            id: videos[i].snippet.channelId,
-          },
-        })
-        .then((res) => res.data.items[0])
-        .then((item) => (videos[i].channel = item));
-      videoChannel.push(response);
-    }
-    return videoChannel;
   }
 }
 

@@ -5,6 +5,13 @@ module.exports = {
     extend: {
       colors: {
         brand: '#FF0000',
+        black: '#000000',
+        white: '#ffffff',
+        lightGrey: '#f8f8f8',
+        mediumGrey: '#f2f2f2',
+        darkGrey: '#d2d2d2',
+        login: '#2b7cdd',
+        loginGrey: '#e9e9e9',
       },
       fontFamily: {
         kenyc: ['kenyc', 'sans-serif'],

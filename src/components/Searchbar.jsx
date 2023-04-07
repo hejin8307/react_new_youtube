@@ -38,13 +38,14 @@ const Searchbar = () => {
       {/* searchbar */}
       <form className="w-full flex justify-center" onSubmit={handleSubmit}>
         <input
-          className="font-roboto w-7/12 py-2 border border-zinc-300 rounded-tl-3xl rounded-bl-3xl outline-none indent-4"
+          className="font-roboto w-7/12 py-2 border border-darkGrey rounded-tl-3xl rounded-bl-3xl outline-none indent-4"
           type="text"
           placeholder="Search"
           value={text}
+          spellCheck="false"
           onChange={(e) => setText(e.target.value)}
         />
-        <button className="px-4 border-y border-r border-zinc-300 bg-stone-100 rounded-tr-3xl rounded-br-3xl">
+        <button className="px-4 border-y border-r border-darkGrey bg-lightGrey rounded-tr-3xl rounded-br-3xl">
           <IoIosSearch size="24" />
         </button>
       </form>
@@ -53,7 +54,7 @@ const Searchbar = () => {
         <BiDotsVerticalRounded size="24" />
       </button>
       {/* 로그인 */}
-      <button className="flex items-center ml-4 pl-2 py-0.5 text-blue-600 border border-zinc-300 rounded-3xl">
+      <button className="flex items-center ml-4 pl-2 py-0.5 text-login border border-loginGrey rounded-3xl">
         <HiOutlineUserCircle size="32" />
         <p className="pl-2 pr-3 font-semibold whitespace-nowrap">Sign in</p>
       </button>

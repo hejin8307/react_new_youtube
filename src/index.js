@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
-import axios from 'axios';
 import NotFound from './pages/NotFound';
 import Videos from './pages/Videos';
 import VideoDetail from './pages/VideoDetail';

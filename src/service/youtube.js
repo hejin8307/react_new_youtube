@@ -11,7 +11,7 @@ class Youtube {
     return this.apiClient
       .channels({
         params: {
-          part: 'snippet',
+          part: 'snippet, statistics',
           id,
         },
       })

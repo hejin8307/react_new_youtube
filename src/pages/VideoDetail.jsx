@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {useLocation} from 'react-router-dom';
-import ChannelInfo from '../components/ChannelInfo';
 import RelatedVideos from '../components/RelatedVideos';
+import ChannelThumbnails from '../components/ChannelThumbnails';
 
 // Video를 선택했을 때 page
 const VideoDetail = () => {
@@ -28,7 +28,7 @@ const VideoDetail = () => {
         />
         <div>
           <h2 className="text-xl font-bold mt-4 mb-2">{title}</h2>
-          <ChannelInfo id={channelId} name={channelTitle} />
+          <ChannelThumbnails id={channelId} name={channelTitle} />
           <div className="bg-mediumGrey rounded-lg">
             <pre
               className={`${

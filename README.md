@@ -23,7 +23,7 @@ Advanced Service to use new libraries
 
 <br/>
 
-## Techs used
+## 🛠 Techs used
 
 - HTML
 - JavaScript
@@ -33,19 +33,12 @@ Advanced Service to use new libraries
 - Yarn
 - Netlify
 
-## 🛠 Function with Screenshots
+## 🛠 Function and Done
 
 - Search a video
 - Show videos
 - Play the video you clicked
 - Show videos' info
-
-## ✔ Done
-
-- Search a video
-- Show videos
-- play the video you clicked
-- show videos' info
 
 ## 💻 URL
 

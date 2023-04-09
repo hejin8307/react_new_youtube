@@ -33,7 +33,7 @@ Advanced Service to use new libraries
 - Yarn
 - Netlify
 
-## 🛠 Function with Screenshots(soon)
+## 🛠 Function with Screenshots
 
 - Search a video
 - Show videos

@@ -1,39 +1,66 @@
 import React from 'react';
 import {useNavigate} from 'react-router-dom';
+import {useYoutubeApi} from '../context/YoutubeApiContext';
+import {useQuery} from '@tanstack/react-query';
 import {formatAgo} from '../util/date';
 import he from 'he';
 import ChannelThumbnails from './ChannelThumbnails';
-import ChannelViewCount from './Channel/ChannelViewCount';
+import {ViewCount} from '../util/converter';
 
 const VideoCard = ({video, type}) => {
   const {title, thumbnails, channelId, channelTitle, publishedAt} =
     video.snippet;
 
+  const {youtube} = useYoutubeApi();
   const navigate = useNavigate();
+
+  const {
+    isLoading,
+    error,
+    data: channel,
+  } = useQuery(['channel', channelId], () => youtube.channelDetail(channelId), {
+    staleTime: 1000 * 60 * 5,
+  });
 
   const isList = type === 'list';
 
+  if (!video) {
+    return null;
+  }
+
+  if (!channel) {
+    return null;
+  }
+
   return (
     <li
-      className={`${isList ? 'flex gap-1 pt-2' : ''} cursor-pointer`}
+      className={`${isList ? 'flex gap-1 pb-2' : ''} cursor-pointer`}
       onClick={() => {
-        navigate(`/videos/watch/${video.id}`, {state: {video}});
+        navigate(`/videos/watch/${video.id}`, {state: {video, channel}});
       }}
     >
       <img
-        className={`${isList ? 'w-60 mr-2' : 'w-full'} rounded-lg`}
-        src={thumbnails.medium.url}
+        className={`${isList ? 'w-40 mr-2' : 'w-full'} rounded-lg`}
+        src={video.snippet.thumbnails.medium.url}
         alt={title}
       />
-      <div className="flex items-start pt-2">
-        {!isList && (
+      <div className={`${isList ? '' : 'pt-2'} flex items-start`}>
+        {/* {!isList && (
           <ChannelThumbnails id={channelId} name={channelTitle} type="grid" />
+        )} */}
+        {!isList && (
+          <img
+            className="w-10 h-10 rounded-full"
+            src={channel.snippet.thumbnails.default.url}
+            alt={channelTitle}
+          />
         )}
         <div className="pl-2">
           <p className="font-semibold line-clamp-2">{he.decode(title)}</p>
           <p className="text-sm opacity-80">{channelTitle}</p>
-          {/* <ChannelViewCount id={channelId} /> */}
-          <p className="text-sm opacity-80">{formatAgo(publishedAt)}</p>
+          <p className="text-sm opacity-80">{`${ViewCount(
+            channel.statistics.viewCount
+          )} • ${formatAgo(publishedAt)}`}</p>
         </div>
       </div>
     </li>

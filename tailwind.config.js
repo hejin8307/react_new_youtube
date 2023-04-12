@@ -12,6 +12,7 @@ module.exports = {
         darkGrey: '#d2d2d2',
         login: '#2b7cdd',
         loginGrey: '#e9e9e9',
+        hashtagGrey: '#a6a6a6',
       },
       fontFamily: {
         kenyc: ['kenyc', 'sans-serif'],

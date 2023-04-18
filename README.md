@@ -38,13 +38,12 @@ Advanced Service to use new libraries
 - Search a video
 - Show videos
 - Play the video you clicked
-- Show videos' info
+- Show videos and channel's info
 
 ## 💻 URL
 
 ## 📖 Todo
 
-- Show channel Info
 - Login / Logout / Signup
 - DarkMode
 - Fix UX/UI

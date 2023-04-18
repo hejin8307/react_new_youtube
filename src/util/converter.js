@@ -11,5 +11,9 @@ export function Converter(number) {
   const scaled = numAbs / Math.pow(10, tier * 3); // 접미사에 해당하는 자리수로 숫자 축소
   const suffix = suffixes[tier]; // 접미사 선택
 
-  return sign + scaled.toFixed(1) + suffix; // 접미사와 함께 포맷팅된 문자열 반환
+  // "k"가 붙을 경우 소수점 숨기기
+  const formattedNumber =
+    suffix === 'K' ? Math.floor(scaled) : scaled.toFixed(1);
+
+  return sign + formattedNumber + suffix; // 접미사와 함께 포맷팅된 문자열 반환
 }

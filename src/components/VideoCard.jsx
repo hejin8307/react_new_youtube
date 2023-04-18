@@ -5,7 +5,7 @@ import {useQuery} from '@tanstack/react-query';
 import {formatAgo} from '../util/date';
 import he from 'he';
 import ChannelThumbnails from './ChannelThumbnails';
-import {ViewCount} from '../util/converter';
+import {Converter} from '../util/converter';
 
 const VideoCard = ({video, type}) => {
   const {title, thumbnails, channelId, channelTitle, publishedAt} =
@@ -22,13 +22,17 @@ const VideoCard = ({video, type}) => {
     staleTime: 1000 * 60 * 5,
   });
 
+  const {data: videoInfo} = useQuery(
+    ['videoInfo', video.id],
+    () => youtube.getVideoInfo(video.id),
+    {
+      staleTime: 1000 * 60 * 5,
+    }
+  );
+
   const isList = type === 'list';
 
-  if (!video) {
-    return null;
-  }
-
-  if (!channel) {
+  if (!video || !channel || !videoInfo) {
     return null;
   }
 
@@ -36,7 +40,9 @@ const VideoCard = ({video, type}) => {
     <li
       className={`${isList ? 'flex gap-1 pb-2' : ''} cursor-pointer`}
       onClick={() => {
-        navigate(`/videos/watch/${video.id}`, {state: {video, channel}});
+        navigate(`/videos/watch/${video.id}`, {
+          state: {video, channel, videoInfo},
+        });
       }}
     >
       <img
@@ -58,8 +64,8 @@ const VideoCard = ({video, type}) => {
         <div className="pl-2">
           <p className="font-semibold line-clamp-2">{he.decode(title)}</p>
           <p className="text-sm opacity-80">{channelTitle}</p>
-          <p className="text-sm opacity-80">{`${ViewCount(
-            channel.statistics.viewCount
+          <p className="text-sm opacity-80">{`${Converter(
+            videoInfo.viewCount
           )} • ${formatAgo(publishedAt)}`}</p>
         </div>
       </div>

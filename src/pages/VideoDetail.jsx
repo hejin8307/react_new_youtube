@@ -2,14 +2,14 @@ import React, {useState} from 'react';
 import {useLocation} from 'react-router-dom';
 import RelatedVideos from '../components/RelatedVideos';
 import he from 'he';
-import {ViewCount, SubscriberConverter} from '../util/converter';
+import {Converter} from '../util/converter';
 import ChannelThumbnails from '../components/ChannelThumbnails';
 import {formatAgo} from '../util/date';
 
 // Video를 선택했을 때 page
 const VideoDetail = () => {
   const {
-    state: {video, channel},
+    state: {video, channel, videoInfo},
   } = useLocation();
 
   const [isOpened, setIsOpened] = useState(false);
@@ -17,13 +17,11 @@ const VideoDetail = () => {
   const {title, channelId, channelTitle, description, publishedAt, tags} =
     video.snippet;
 
-  if (!video) {
+  if (!video || !channel || !videoInfo) {
     return null;
   }
 
-  if (!channel) {
-    return null;
-  }
+  console.log(description);
 
   return (
     <section className="flex flex-col lg:flex-row py-4">
@@ -50,17 +48,16 @@ const VideoDetail = () => {
             <div className="ml-2">
               <p className="font-medium">{channelTitle}</p>
               <p className="text-xs">
-                {SubscriberConverter(channel.statistics.subscriberCount)}
+                {`${Converter(channel.statistics.subscriberCount)} subscribers`}
               </p>
             </div>
           </div>
           <div className="bg-mediumGrey rounded-lg py-2 px-3">
             <div className="flex">
               <p className="font-medium text-sm">
-                {`${ViewCount(channel.statistics.viewCount)} ${formatAgo(
-                  publishedAt
-                )} `}
+                {`${Converter(videoInfo.viewCount)} views`} &nbsp;
               </p>
+              <p className="font-medium text-sm">{formatAgo(publishedAt)}</p>
               <p className="text-hashtagGrey pl-2">
                 {tags && tags.map((tag) => `#${tag} `).slice(0, 3)}
               </p>
@@ -68,7 +65,7 @@ const VideoDetail = () => {
             <pre
               className={`${
                 isOpened ? '' : 'line-clamp-4'
-              } whitespace-pre-wrap `}
+              } whitespace-pre-wrap text-sm`}
             >
               {description}
             </pre>

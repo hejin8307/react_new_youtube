@@ -1,41 +1,15 @@
-export function ViewCount(viewCount) {
-  if (viewCount < 1000) {
-    return viewCount;
-  } else if (viewCount < 10000) {
-    return `${(viewCount / 1000).toFixed(1)}K views`; // 천
-  } else if (viewCount < 100000) {
-    return `${(viewCount / 10000).toFixed(1)}M views`; //1만뷰
-  } else if (viewCount < 100000000) {
-    return `${Math.round(viewCount / 10000)}M views`; //10만뷰
-  } else if (viewCount < 10000000) {
-    return `${Math.round(viewCount / 10000)}M views`; //100만뷰
-  } else if (viewCount < 100000000) {
-    return `${Math.round(viewCount / 10000)}M views`; //1000만뷰
-  } else if (viewCount < 1000000000) {
-    return `${Math.round(viewCount / 100000000)}B views`; //1억뷰
-  } else if (viewCount < 1000000000000) {
-    return `${Math.round(viewCount / 100000000)}B views`; //10억뷰
-  } else if (viewCount < 10000000000000) {
-    return `${Math.round(viewCount / 100000000)}B views`; //100억뷰
-  }
-}
+export function Converter(number) {
+  const suffixes = ['', 'K', 'M', 'B']; // 각 자리수에 따른 접미사 배열
+  const numAbs = Math.abs(number); // 입력된 숫자의 절대값
+  const sign = Math.sign(number) === -1 ? '-' : ''; // 입력된 숫자의 부호
 
-export function SubscriberConverter(subscriberCount) {
-  if (subscriberCount < 1000) {
-    return subscriberCount;
-  } else if (subscriberCount < 10000) {
-    return `${(subscriberCount / 1000).toFixed(1)}K subscribers`; //천
-  } else if (subscriberCount < 100000) {
-    return `${(subscriberCount / 10000).toFixed(1)}M subscribers`; //1만명
-  } else if (subscriberCount < 1000000) {
-    return `${Math.round(subscriberCount / 10000)}M subscribers`; //10만명
-  } else if (subscriberCount < 10000000) {
-    return `${Math.round(subscriberCount / 10000)}M subscribers`; //100만명
-  } else if (subscriberCount < 100000000) {
-    return `${Math.round(subscriberCount / 10000)}M subscribers`; //1000만명
-  } else if (subscriberCount < 1000000000) {
-    return `${Math.round(subscriberCount / 100000000)}B subscribers`; //1억명
-  } else if (subscriberCount < 10000000000) {
-    return `${Math.round(subscriberCount / 100000000)}B subscribers`; //10억명
+  if (numAbs < 1000) {
+    return sign + numAbs.toString(); // 1000 미만인 경우 그대로 반환
   }
+
+  const tier = Math.floor(Math.log10(numAbs) / 3); // 숫자의 자리수에 따른 접미사 인덱스 계산
+  const scaled = numAbs / Math.pow(10, tier * 3); // 접미사에 해당하는 자리수로 숫자 축소
+  const suffix = suffixes[tier]; // 접미사 선택
+
+  return sign + scaled.toFixed(1) + suffix; // 접미사와 함께 포맷팅된 문자열 반환
 }

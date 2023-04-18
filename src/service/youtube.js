@@ -33,6 +33,17 @@ class Youtube {
       );
   }
 
+  async getVideoInfo(id) {
+    return this.apiClient
+      .videos({
+        params: {
+          part: 'statistics',
+          id,
+        },
+      })
+      .then((res) => res.data.items[0].statistics);
+  }
+
   async #searchByKeyword(keyword) {
     return this.apiClient
       .search({
@@ -52,7 +63,7 @@ class Youtube {
     return this.apiClient
       .videos({
         params: {
-          part: 'snippet',
+          part: 'snippet, statistics',
           maxResults: 25,
           chart: 'mostPopular',
         },

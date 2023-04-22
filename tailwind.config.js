@@ -13,6 +13,10 @@ module.exports = {
         login: '#2b7cdd',
         loginGrey: '#e9e9e9',
         hashtagGrey: '#a6a6a6',
+        darkBlack: '#0f0f0f',
+        dark_darkGrey: '#272727',
+        darkSearch: '#222222',
+        darkLine: '#2b2b2b',
       },
       fontFamily: {
         kenyc: ['kenyc', 'sans-serif'],

@@ -39,6 +39,7 @@ Advanced Service to use new libraries
 - Show videos
 - Play the video you clicked
 - Show videos and channel's info
+- DarkMode
 
 ## 💻 URL
 
@@ -47,5 +48,4 @@ Advanced Service to use new libraries
 ## 📖 Todo
 
 - Login / Logout / Signup
-- DarkMode
 - Fix UX/UI

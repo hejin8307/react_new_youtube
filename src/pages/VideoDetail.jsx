@@ -5,12 +5,15 @@ import he from 'he';
 import {Converter} from '../util/converter';
 import ChannelThumbnails from '../components/ChannelThumbnails';
 import {formatAgo} from '../util/date';
+import {useDarkMode} from '../context/DarkModeContext';
 
 // Video를 선택했을 때 page
 const VideoDetail = () => {
   const {
     state: {video, channel, videoInfo},
   } = useLocation();
+
+  const {darkMode} = useDarkMode();
 
   const [isOpened, setIsOpened] = useState(false);
 
@@ -20,8 +23,6 @@ const VideoDetail = () => {
   if (!video || !channel || !videoInfo) {
     return null;
   }
-
-  console.log(description);
 
   return (
     <section className="flex flex-col lg:flex-row py-4">
@@ -52,7 +53,11 @@ const VideoDetail = () => {
               </p>
             </div>
           </div>
-          <div className="bg-mediumGrey rounded-lg py-2 px-3">
+          <div
+            className={`rounded-lg py-2 px-3 ${
+              darkMode ? 'bg-dark_darkGrey' : 'bg-mediumGrey'
+            }`}
+          >
             <div className="flex">
               <p className="font-medium text-sm">
                 {`${Converter(videoInfo.viewCount)} views`} &nbsp;

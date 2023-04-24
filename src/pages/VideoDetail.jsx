@@ -79,9 +79,12 @@ const VideoDetail = () => {
             {isOpened ? 'Show less' : 'Show more'}
           </button>
         </div>
+        <div className="lg:hidden">
+          <RelatedVideos id={video.id} />
+        </div>
         <Comments id={video.id} />
       </article>
-      <section className="basis-2/6">
+      <section className="hidden lg:block basis-2/6">
         <RelatedVideos id={video.id} />
       </section>
     </section>

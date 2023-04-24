@@ -44,6 +44,17 @@ class Youtube {
       .then((res) => res.data.items[0].statistics);
   }
 
+  async commentThreads(id) {
+    return this.apiClient
+      .commentThreads({
+        params: {
+          part: 'snippet',
+          videoId: id,
+        },
+      })
+      .then((res) => res.data.items);
+  }
+
   async #searchByKeyword(keyword) {
     return this.apiClient
       .search({

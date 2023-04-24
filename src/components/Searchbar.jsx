@@ -25,11 +25,6 @@ const Searchbar = () => {
   // 뒤로가기 했을 때 searchbar에 검색한 키워드와 이전 페이지와 맞게 하기 위함
   useEffect(() => setText(keyword || ''), [keyword]);
 
-  const toggleDarkModeWithDropdown = () => {
-    toggleDarkMode();
-    setDropdown(false);
-  };
-
   return (
     <header id="searchBox" className="w-full px-4 py-2 flex items-center">
       {/* 메뉴 */}
@@ -81,7 +76,10 @@ const Searchbar = () => {
         >
           <button
             className="flex items-center"
-            onClick={toggleDarkModeWithDropdown}
+            onClick={() => {
+              toggleDarkMode();
+              setDropdown(false);
+            }}
           >
             <BiMoon />
             <p className="pl-2">{darkMode ? 'LightMode' : 'DarkMode'}</p>
